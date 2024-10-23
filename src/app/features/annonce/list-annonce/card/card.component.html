@@ -1,0 +1,12 @@
+
+      <div class="card" >
+        <img [routerLink]="['/annonce/list/details/', mobilier.id]" src="{{mobilier.images}}" alt="{{mobilier.nomMobilier}}" class="card-img-top img-fluid" style="object-fit: cover; height: 250px; cursor: pointer;">
+        <div class="card-body">
+          <h5 class="card-title text-center" [routerLink]="['/detail', mobilier.id]">{{mobilier.nomMobilier}}</h5>
+          <p class="card-text"><strong>Prix:</strong> {{mobilier.prix}} TND</p>
+          <p class="card-text"><strong>Type:</strong> {{mobilier.type}}</p>
+          <p class="card-text"><strong>Localisation:</strong> {{mobilier.localisation}}</p>
+        </div>
+      </div>
+
+

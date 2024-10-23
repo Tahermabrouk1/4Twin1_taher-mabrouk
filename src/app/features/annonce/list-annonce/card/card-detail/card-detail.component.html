@@ -1,0 +1,18 @@
+<div class="container ">
+    <a routerLink="/annonce/list" class="btn btn-primary mb-2 ">Retour à la liste</a>
+  <div class="card mb-4 shadow-sm">
+    <img src="{{cardDetails.images}}" alt="{{cardDetails.nomMobilier}}" class="card-img-top" style="object-fit: cover; height: 400px;">
+    <div class="card-body">
+      <h5 class="card-title">{{cardDetails.nomMobilier}}</h5>
+      <p class="card-text"><strong>Description:</strong> {{cardDetails.description}}</p>
+      <p class="card-text"><strong>Prix:</strong> {{cardDetails.prix}} TND</p>
+      <p class="card-text"><strong>Type:</strong> {{cardDetails.type}}</p>
+      <p class="card-text"><strong>État:</strong> {{cardDetails.etat}}</p>
+      <p class="card-text"><strong>Localisation:</strong> {{cardDetails.localisation}}</p>
+      <p class="card-text"><strong>Disponibilité:</strong> <span [ngClass]="{'text-success': cardDetails.disponibilite, 'text-danger': !cardDetails.disponibilite}">
+        {{cardDetails.disponibilite ? 'Disponible' : 'Non Disponible'}}</span>
+      </p>
+      <p class="card-text"><strong>Date d'ajout:</strong> {{cardDetails.dateAjout | date:'shortDate'}}</p>
+    </div>
+  </div>
+</div>

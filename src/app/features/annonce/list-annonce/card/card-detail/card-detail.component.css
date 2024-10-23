@@ -1,0 +1,16 @@
+.card {
+  border-radius: 15px; /* Coins arrondis */
+}
+
+.card-title {
+  font-size: 1.5rem; /* Augmenter la taille du titre */
+  font-weight: bold; /* Mettre en gras */
+}
+
+.card-text {
+  font-size: 1.1rem; /* Taille du texte légèrement plus grande */
+}
+
+.btn-primary {
+  margin-top: 20px; /* Ajouter un espacement en haut du bouton */
+}

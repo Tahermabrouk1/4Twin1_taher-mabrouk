@@ -1,0 +1,17 @@
+.side-menu-container {
+    height: 100vh; 
+    overflow-y: auto;
+}
+
+.nav-link {
+    transition: background-color 0.3s ease; 
+}
+
+.nav-link:hover {
+    background-color: #e2e6ea; 
+}
+
+.nav-link.active {
+    background-color: #007bff; 
+    color: white; 
+}

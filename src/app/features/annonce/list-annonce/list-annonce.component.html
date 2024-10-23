@@ -1,0 +1,17 @@
+<div class="container">
+<h1>ALL Mobilier</h1>
+<input [(ngModel)]="searchMobilier" type="text" class="form-control mb-3" placeholder="search by mobilier">
+</div>
+<section id="gallery">
+  <div class="container">
+    <div class="row" >
+      <ng-container *ngFor="let mobilier of listMobilier">
+         <ng-container *ngIf="mobilier.category.id == categoryId || categoryId == null">
+      <div class="col-lg-4 mb-4" *ngIf="mobilier.nomMobilier.includes(searchMobilier) || searchMobilier == null">
+        <app-card [mobilier]="mobilier"></app-card>
+      </div>
+      </ng-container>
+      </ng-container>
+    </div>
+  </div>
+</section>
